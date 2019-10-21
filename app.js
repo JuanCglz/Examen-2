@@ -54,6 +54,12 @@ app.get('/met', function(req, res) {
         }
     })
   })
+
+  app.get('/extra', function(req, res) {
+    res.send({
+      message: 'Tengo puntas extra?'
+    })
+  })
   
   app.get('*', function(req, res) {
     res.send({
